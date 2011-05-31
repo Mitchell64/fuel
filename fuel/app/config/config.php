@@ -103,6 +103,36 @@ return array(
 	),
 
 	/**
+	 * Cookie settings
+	 */
+	'cookie' => array(
+		/**
+		 * integer: Number of seconds before the cookie expires
+		 */
+		'expiration' 	=> 86400,
+
+		/**
+		 * string: Restrict the path that the cookie is available to
+		 */
+		'path' 			=> '/',
+
+		/**
+		 * string: Restrict the domain that the cookie is available to
+		 */
+		'domain'		=> '',
+
+		/**
+		 * boolean: Only transmit cookies over secure connections
+		 */
+		'secure'		=> false,
+
+		/**
+		 * boolean: Only transmit cookies over HTTP, disabling Javascript access
+		 */
+		'http_only'		=> false,
+	),
+
+	/**
 	 * To enable you to split up your application into modules which can be
 	 * routed by the first uri segment you have to define their basepaths
 	 * here. By default empty, but to use them you can add something
